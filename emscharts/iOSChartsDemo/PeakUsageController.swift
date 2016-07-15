@@ -9,6 +9,9 @@ class PeakUsageController: UIViewController {
     private var containerView: UIView!
     private var toolbar: Toolbar!
     
+    
+    var horizBarchartView: HorizontalBarChartView!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -34,6 +37,7 @@ class PeakUsageController: UIViewController {
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
         
         setChart(months, values: unitsSold)
+        setHorizChart(months, values: unitsSold)
         
     }
     
@@ -54,7 +58,10 @@ class PeakUsageController: UIViewController {
     private func createChart(){
         barchartview = BarChartView(frame: CGRect(x: 0, y: 50, width: 350, height: 350))
         barchartview.backgroundColor = MaterialColor.white
+        horizBarchartView = HorizontalBarChartView(frame: CGRect(x: 0, y: 400, width: 350, height: 350))
+        horizBarchartView.backgroundColor = MaterialColor.white
         view.addSubview(barchartview)
+        view.addSubview(horizBarchartView)
     }
     
     
@@ -70,6 +77,20 @@ class PeakUsageController: UIViewController {
         let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
         let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
         barchartview.data = chartData
+    }
+    
+    func setHorizChart(dataPoints: [String], values: [Double]) {
+        horizBarchartView.noDataText = "You need to provide data for the chart."
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
+        horizBarchartView.data = chartData
     }
     
     
