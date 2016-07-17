@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let bottomNavigationController: BottomNavigationController = BottomNavigationController()
-        bottomNavigationController.viewControllers = [PeakUsageController(), SpendingsSavingsController(), UsageController()]
+        bottomNavigationController.viewControllers = [PeakUsageController(), SpendingsSavingsController(), DetailedViewController()]
         bottomNavigationController.selectedIndex = 0
         bottomNavigationController.tabBar.tintColor = MaterialColor.teal.base
         bottomNavigationController.tabBar.backgroundColor = MaterialColor.grey.darken4

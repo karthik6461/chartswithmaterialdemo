@@ -176,6 +176,7 @@
 		96BCB8581CB4116800C806FE /* MaterialColor.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96BCB7FD1CB40E1D00C806FE /* MaterialColor.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		96BCB8591CB4118E00C806FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96334EF51C8B84660083986B /* Assets.xcassets */; };
 		96D88C321C1328D800B91418 /* Material.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D88C091C1328D800B91418 /* Material.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71451A21D3991160083D51A /* RXTreeControl in Resources */ = {isa = PBXBuildFile; fileRef = A71451A11D3991160083D51A /* RXTreeControl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 966016121CB2ED6C00AAB661;
 			remoteInfo = "Material OSX";
+		};
+		A71451511D39689A0083D51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A714514B1D39689A0083D51A /* RATreeView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0626D68B1BF8A37800CD3B04;
+			remoteInfo = RATreeView;
+		};
+		A71451531D39689A0083D51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A714514B1D39689A0083D51A /* RATreeView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0626D5571BF7E81E00CD3B04;
+			remoteInfo = "RATreeView-iOS";
+		};
+		A71451551D39689A0083D51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A714514B1D39689A0083D51A /* RATreeView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0626D6941BF8A37800CD3B04;
+			remoteInfo = RATreeViewTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -290,6 +312,8 @@
 		96D88BFC1C1328D800B91418 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D88BFD1C1328D800B91418 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		96D88C091C1328D800B91418 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		A714514B1D39689A0083D51A /* RATreeView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RATreeView.xcodeproj; path = ../RATreeView/RATreeView/RATreeView.xcodeproj; sourceTree = "<group>"; };
+		A71451A11D3991160083D51A /* RXTreeControl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RXTreeControl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,9 +353,11 @@
 		9638322C1B88DFD80015F710 = {
 			isa = PBXGroup;
 			children = (
+				A71451A11D3991160083D51A /* RXTreeControl */,
 				96D88BF41C1328D800B91418 /* Sources */,
 				963832571B88E31A0015F710 /* Tests */,
 				963832371B88DFD80015F710 /* Products */,
+				A714514B1D39689A0083D51A /* RATreeView.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -634,6 +660,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		A714514C1D39689A0083D51A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71451521D39689A0083D51A /* RATreeView.framework */,
+				A71451541D39689A0083D51A /* RATreeView.framework */,
+				A71451561D39689A0083D51A /* RATreeViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -836,6 +872,12 @@
 			mainGroup = 9638322C1B88DFD80015F710;
 			productRefGroup = 963832371B88DFD80015F710 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A714514C1D39689A0083D51A /* Products */;
+					ProjectRef = A714514B1D39689A0083D51A /* RATreeView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				963832351B88DFD80015F710 /* Material iOS */,
@@ -846,6 +888,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A71451521D39689A0083D51A /* RATreeView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RATreeView.framework;
+			remoteRef = A71451511D39689A0083D51A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A71451541D39689A0083D51A /* RATreeView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RATreeView.framework;
+			remoteRef = A71451531D39689A0083D51A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A71451561D39689A0083D51A /* RATreeViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RATreeViewTests.xctest;
+			remoteRef = A71451551D39689A0083D51A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		963832341B88DFD80015F710 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -853,6 +919,7 @@
 			files = (
 				96334EF61C8B84660083986B /* Assets.xcassets in Resources */,
 				96BCB7F71CB40DE900C806FE /* Roboto-Medium.ttf in Resources */,
+				A71451A21D3991160083D51A /* RXTreeControl in Resources */,
 				96BCB7F31CB40DE900C806FE /* Roboto-Bold.ttf in Resources */,
 				96BCB7FB1CB40DE900C806FE /* Roboto-Thin.ttf in Resources */,
 				96BCB7F91CB40DE900C806FE /* Roboto-Regular.ttf in Resources */,

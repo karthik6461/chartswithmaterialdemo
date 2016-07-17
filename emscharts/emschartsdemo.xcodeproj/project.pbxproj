@@ -20,6 +20,9 @@
 		A714512B1D3826670083D51A /* SpendingsSavingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714512A1D3826670083D51A /* SpendingsSavingsController.swift */; };
 		A714512D1D3826C70083D51A /* UsageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714512C1D3826C70083D51A /* UsageController.swift */; };
 		A714512F1D3838CC0083D51A /* EMSToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714512E1D3838CC0083D51A /* EMSToolbar.swift */; };
+		A71451321D3963B20083D51A /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71451311D3963B20083D51A /* TreeViewController.swift */; };
+		A714517B1D39858A0083D51A /* HierachyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714517A1D39858A0083D51A /* HierachyViewController.swift */; };
+		A71451A61D39ADD70083D51A /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71451A51D39ADD70083D51A /* DetailedViewController.swift */; };
 		A7364F801D36A92100DDCE31 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7364F791D36A87300DDCE31 /* Charts.framework */; };
 		A7364F811D36A92100DDCE31 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7364F791D36A87300DDCE31 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -136,6 +139,9 @@
 		A714512A1D3826670083D51A /* SpendingsSavingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingsSavingsController.swift; sourceTree = "<group>"; };
 		A714512C1D3826C70083D51A /* UsageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageController.swift; sourceTree = "<group>"; };
 		A714512E1D3838CC0083D51A /* EMSToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMSToolbar.swift; sourceTree = "<group>"; };
+		A71451311D3963B20083D51A /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
+		A714517A1D39858A0083D51A /* HierachyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierachyViewController.swift; sourceTree = "<group>"; };
+		A71451A51D39ADD70083D51A /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		A7364F711D36A87300DDCE31 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +195,9 @@
 				A714512A1D3826670083D51A /* SpendingsSavingsController.swift */,
 				A714512C1D3826C70083D51A /* UsageController.swift */,
 				A714512E1D3838CC0083D51A /* EMSToolbar.swift */,
+				A71451311D3963B20083D51A /* TreeViewController.swift */,
+				A714517A1D39858A0083D51A /* HierachyViewController.swift */,
+				A71451A51D39ADD70083D51A /* DetailedViewController.swift */,
 				5F69BFED1B2A6B8200FB2CE0 /* Main.storyboard */,
 				5F69BFF01B2A6B8200FB2CE0 /* Images.xcassets */,
 				5F69BFF21B2A6B8200FB2CE0 /* LaunchScreen.xib */,
@@ -419,11 +428,14 @@
 			files = (
 				5F69C00A1B2A6CA200FB2CE0 /* ChartsViewController.swift in Sources */,
 				5F69BFEC1B2A6B8200FB2CE0 /* BarChartViewController.swift in Sources */,
+				A71451A61D39ADD70083D51A /* DetailedViewController.swift in Sources */,
+				A71451321D3963B20083D51A /* TreeViewController.swift in Sources */,
 				A714512B1D3826670083D51A /* SpendingsSavingsController.swift in Sources */,
 				A714512F1D3838CC0083D51A /* EMSToolbar.swift in Sources */,
 				A71451291D3818080083D51A /* PeakUsageController.swift in Sources */,
 				5F69BFEA1B2A6B8200FB2CE0 /* AppDelegate.swift in Sources */,
 				A714512D1D3826C70083D51A /* UsageController.swift in Sources */,
+				A714517B1D39858A0083D51A /* HierachyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
